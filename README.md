@@ -1,6 +1,10 @@
 # TestMaterialAsyncCompiler
 Async material loading demo with Stride Game Engine
+
 ## Resources
 SkyBox/Cubemap texture - https://svs.gsfc.nasa.gov/3572/
+
 Sat(moon) texture - https://svs.gsfc.nasa.gov/4720/
+
 Planets textures - https://www.turbosquid.com/3d-models/planets-series-scifi-781385
+
