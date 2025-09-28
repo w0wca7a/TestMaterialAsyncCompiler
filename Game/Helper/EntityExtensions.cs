@@ -1,6 +1,6 @@
 ﻿using Stride.Engine;
 
-namespace TestLoading.Helper
+namespace TestMaterialAsyncCompiler.Helper
 {
     public static class EntityExtensions
     {

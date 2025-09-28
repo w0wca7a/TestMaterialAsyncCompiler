@@ -5,7 +5,7 @@ using Stride.Games;
 using Stride.UI;
 using Stride.UI.Controls;
 
-namespace TestLoading.InfoShow
+namespace TestMaterialAsyncCompiler.InfoShow
 {
     public class InfoShowProcessor : EntityProcessor<InfoShowComponent>
     {
@@ -41,8 +41,8 @@ namespace TestLoading.InfoShow
         private static void UpdateDisplayInfo(InfoShowComponent component, ref TextBlock textBlock)
         {
             component.Entity.Transform.GetWorldTransformation(
-                out Vector3 worldPosition, 
-                out Quaternion worldRotation, 
+                out Vector3 worldPosition,
+                out Quaternion worldRotation,
                 out _);
 
             textBlock.Text =

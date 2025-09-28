@@ -9,7 +9,7 @@ using Stride.Rendering.Materials;
 using Stride.UI.Controls;
 using Stride.Rendering.Sprites;
 
-namespace TestLoading
+namespace TestMaterialAsyncCompiler
 {
     [DataContract("UIHandler")]
     [Display("UI Page Handler")]
@@ -51,7 +51,7 @@ namespace TestLoading
                     }
                 }
             }
-            if(Materials.Count > 0) matCount = Materials.Count;
+            if (Materials.Count > 0) matCount = Materials.Count;
             FindButtons();
             //ApplyCurrentMaterial();
         }
@@ -115,12 +115,12 @@ namespace TestLoading
         {
             DebugText.Print("cur mat ind" + curMaterial + "old mat ind" + oldMaterial, new Int2(40, 40));
             if (Materials.Count == 0) return;
-            if (curMaterial < 0) curMaterial = matCount-1;
-            if(curMaterial > matCount - 1) curMaterial = 0;
-            if(curMaterial != oldMaterial)
+            if (curMaterial < 0) curMaterial = matCount - 1;
+            if (curMaterial > matCount - 1) curMaterial = 0;
+            if (curMaterial != oldMaterial)
             {
                 TargetModel.Model.Materials.Clear();
-                var mat = Content.LoadAsync<Material>(Materials[curMaterial]).Result;
+                var mat = Content.LoadAsync(Materials[curMaterial]).Result;
                 TargetModel.Model.Materials.Add(mat);
                 oldMaterial = curMaterial;
             }

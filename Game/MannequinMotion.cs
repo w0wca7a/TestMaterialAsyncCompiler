@@ -1,7 +1,7 @@
 ﻿using Stride.Core.Mathematics;
 using Stride.Engine;
 
-namespace TestLoading;
+namespace TestMaterialAsyncCompiler;
 
 public class MannequinMotion : SyncScript
 {

@@ -1,7 +1,7 @@
 ﻿using Stride.Core.Mathematics;
 using Stride.Engine;
 
-namespace TestLoading;
+namespace TestMaterialAsyncCompiler;
 
 public class Rotation : SyncScript
 {
@@ -9,8 +9,8 @@ public class Rotation : SyncScript
     public float ChildRot { get; set; } = 3f;
     public override void Start()
     {
-        MainRot = MainRot / 1000;
-        ChildRot = ChildRot / 1000;
+        MainRot /= 1000;
+        ChildRot /= 1000;
 
         Quaternion.RotationZ(0.45f, out Quaternion mainRotate);
         Entity.Transform.Rotation = mainRotate;

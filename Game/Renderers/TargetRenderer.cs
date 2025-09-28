@@ -6,7 +6,8 @@ using Stride.Engine;
 using Stride.Graphics;
 using Stride.Rendering;
 using Stride.Rendering.Compositing;
-using TestLoading.Helper;
+using TestMaterialAsyncCompiler.Helper;
+using TestMaterialAsyncCompiler.Renderers;
 
 namespace TestLoading.Renderers
 {

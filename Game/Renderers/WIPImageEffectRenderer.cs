@@ -5,7 +5,7 @@ using Stride.Rendering;
 using Stride.Rendering.Compositing;
 using Stride.Rendering.Images;
 
-namespace TestLoading.Renderers
+namespace TestMaterialAsyncCompiler.Renderers
 {
     public class WIPImageEffectRenderer : IImageEffectRenderer, ISharedRenderer, IImageEffect
     {

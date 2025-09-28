@@ -11,7 +11,7 @@ using Stride.Shaders;
 using Stride.Graphics;
 using Stride.Shaders.Compiler;
 
-namespace TestLoading.Renderers;
+namespace TestMaterialAsyncCompiler.Renderers;
 
 [Display("AsyncMaterialCompiler")]
 public class AsyncMaterialCompilationRenderer : SceneRendererBase
@@ -19,7 +19,7 @@ public class AsyncMaterialCompilationRenderer : SceneRendererBase
     [DataMember(1)]
     [DataMemberRange(-1, 100, 1, 10, 0)]
     public int CompileTaskPriority { get; set; } = -1;
-        
+
     private Material fallbackColorMaterial;
     private GraphicsCompositor compositor;
 
@@ -40,7 +40,7 @@ public class AsyncMaterialCompilationRenderer : SceneRendererBase
 
     protected override void CollectCore(RenderContext context) => base.CollectCore(context);
 
-    protected override void DrawCore(RenderContext context, RenderDrawContext drawContext){}    
+    protected override void DrawCore(RenderContext context, RenderDrawContext drawContext) { }
 
     // Like in https://gist.github.com/Eideren/ef6be9508d8d3b0e460d8a6d15f0937b
     Effect FallbackForAsyncCompilation(RenderObject renderObject, RenderEffect renderEffect, RenderEffectState renderEffectState)
@@ -83,5 +83,5 @@ public class AsyncMaterialCompilationRenderer : SceneRendererBase
             Console.WriteLine(e.ToString());
             return null;
         }
-    }    
+    }
 }

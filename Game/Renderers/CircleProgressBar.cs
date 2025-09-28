@@ -4,7 +4,7 @@ using Stride.Graphics;
 using Stride.Rendering;
 using Stride.Rendering.Compositing;
 
-namespace TestLoading.Renderers
+namespace TestMaterialAsyncCompiler.Renderers
 {
     [Display("CircleProgressBar")]
     public class CircleProgressBar : SceneRendererBase
@@ -65,7 +65,7 @@ namespace TestLoading.Renderers
 
             spriteBatch.End();
 
-            rotation = rotation + RotationSpeed/100;
+            rotation += RotationSpeed / 100;
         }
     }
 }

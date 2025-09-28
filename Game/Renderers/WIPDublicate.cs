@@ -18,7 +18,7 @@ using Stride.Profiling;
 using Stride.Rendering.Materials.ComputeColors;
 using Stride.Shaders;
 
-namespace TestLoading.Renderers;
+namespace TestMaterialAsyncCompiler.Renderers;
 
 public class WIPDublicate : SceneRendererBase
 {

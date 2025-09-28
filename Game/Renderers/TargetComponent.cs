@@ -2,7 +2,7 @@
 using Stride.Core.Mathematics;
 using Stride.Engine;
 
-namespace TestLoading.Renderers
+namespace TestMaterialAsyncCompiler.Renderers
 {
     [DataContract]
     public class TargetComponent : ActivableEntityComponent
