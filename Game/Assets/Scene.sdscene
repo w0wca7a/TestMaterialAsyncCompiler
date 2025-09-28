@@ -140,8 +140,8 @@ Hierarchy:
                         Model: b5cc08dd-e053-4dd7-b6c1-5d2d8fe53092:GeoSphere
                         Materials:
                             7bfbafbf6e19fa584fdeaa4fb2e6aecf~0: 644974ce-3550-48f1-ae0f-1f87c11085a8:mat/Moon
-                    58fe1c09ed5281202a1ff25991a3b0fd: !TestLoading.Renderers.TargetComponent,TestMaterialAsyncCompiler
-                        Id: d81d5fcb-b26e-483c-954a-d62a7dd38517
+                    a0e1c65e634111cfefa88249534b94e6: !TestMaterialAsyncCompiler.Renderers.TargetComponent,TestMaterialAsyncCompiler
+                        Id: 88854b59-e232-4577-a640-1d3864b6ca5a
         -   Folder: Ligths
             Entity:
                 Id: e5811921-6aec-46e6-8893-8d564c6873ef
