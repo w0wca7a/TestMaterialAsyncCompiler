@@ -1,0 +1,43 @@
+!Model
+Id: 43844ef0-710d-476a-998b-56e34fdd7d13
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../Resources/mannequinSkeleton.fbx
+Skeleton: 29ca9a25-c433-4b3c-8563-d4edea471158:mannequinModel Skeleton
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    22699106c595c38a75cfecb26183df61:
+        Name: glossMT
+        MaterialInstance:
+            Material: 7633790a-4956-4f52-a46b-6455e3349f29:mat/glossMT
+    4c3514233d76454ba70d3d1665731a0d:
+        Name: mask
+        MaterialInstance:
+            Material: null
+    e429cd152c44771897be5171757b864b:
+        Name: glowMT
+        MaterialInstance:
+            Material: 787c01ee-4909-44e0-aaa8-95e4a4b6be6b:mat/glowMT
+    932da1e3a2f1dbf8497e9b682a11b315:
+        Name: semiGlossMT
+        MaterialInstance:
+            Material: b3b6744e-b024-40b2-9ec8-8833c790968c:mat/semiGlossMT
+    9f35aadc4059d005175840510755d654:
+        Name: logo
+        MaterialInstance:
+            Material: null
+    c176133616e058b034bffc9d110468fd:
+        Name: upperMatteMT
+        MaterialInstance:
+            Material: 19601eec-5cfb-48a6-88ca-472258bcd2c0:mat/upperMatteMT
+    bcdc3f7efc20f47ef20be9c7480af7d7:
+        Name: lowerMatteMT
+        MaterialInstance:
+            Material: 1f4e5b84-c541-4150-81eb-5e9604340055:mat/lowerMatteMT
+    9e12681b9693bf4f7a27e9e668ad734f:
+        Name: lambert1
+        MaterialInstance:
+            Material: 08be0c80-112e-4ff9-88ce-a726ff3380d2:mat/lambert1
+Modifiers: {}
+~SourceHashes:
+    c509bbcf83890bc692303e9738bca1fe~../Resources/mannequinSkeleton.fbx: 9c8d6377539793ad701523d8238d575d

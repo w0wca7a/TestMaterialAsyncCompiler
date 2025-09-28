@@ -1,0 +1,7 @@
+!Texture
+Id: d98de37f-d00a-43db-bf3b-2c09c82776ac
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/mat/gas/gas red.jpg
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

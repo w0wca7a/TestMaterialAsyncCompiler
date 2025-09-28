@@ -1,0 +1,7 @@
+!Texture
+Id: ecb57816-a9c6-47b8-b5b1-2393364b4676
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/mat/earth/Earth-opac4096.jpg
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

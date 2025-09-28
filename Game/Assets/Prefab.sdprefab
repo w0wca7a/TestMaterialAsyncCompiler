@@ -1,0 +1,29 @@
+!PrefabAsset
+Id: 8d4fbf24-aeb1-4312-9a27-5e1d07f7cb50
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+Hierarchy:
+    RootParts:
+        - ref!! eda05b7d-4244-494b-9553-39f5c6cb1ef8
+    Parts:
+        -   Entity:
+                Id: eda05b7d-4244-494b-9553-39f5c6cb1ef8
+                Name: mannequinModel
+                Components:
+                    fb53610e661caf15bef185ad21984634: !TransformComponent
+                        Id: 116ee559-46a2-4633-92f4-801fb62ab79c
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 0.01, Y: 0.01, Z: 0.01}
+                        Children: {}
+                    020787a2d5e09652904a190bfbe25631: !ModelComponent
+                        Id: e4e8306e-b307-47f3-8af3-f24f6ae08a5f
+                        Model: 43844ef0-710d-476a-998b-56e34fdd7d13:mannequinModel
+                        Materials:
+                            5564249661c6cac64666e35314532cb7~1: c8a26474-b9c6-47f7-859f-bcc6ee5eec4c:mat/glowMT_mask
+                            abfcf4c05a33fc97091958fb2f630614~4: 1fc0cd78-7259-4d78-a394-3bbc7704abc7:mat/logo_
+                    7265b031e777ddfd1121b483fe1fbc54: !TestLoading.LowBattery,TestMaterialAsyncCompiler
+                        Id: db974993-00bd-43c0-9eb6-a2f18d843bfc
+                        Texture: 0076d256-bfdb-4b76-93e9-b55df9c2c604:mat/mask
+                    78b48ea0ab4ba274944786c817423039: !TestLoading.MannequinMotion,TestMaterialAsyncCompiler
+                        Id: 95f3f161-34a8-468d-9deb-001103d393f4

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestMaterialAsyncCompilerExe", "TestMaterialAsyncCompilerExe.csproj", "{B38CE1F1-FBEE-473C-9529-E8CBBBC82368}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestMaterialAsyncCompiler", "Game\TestMaterialAsyncCompiler.csproj", "{AFED3C0E-DB56-4784-8123-CB4E7E70188F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B38CE1F1-FBEE-473C-9529-E8CBBBC82368}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B38CE1F1-FBEE-473C-9529-E8CBBBC82368}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B38CE1F1-FBEE-473C-9529-E8CBBBC82368}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B38CE1F1-FBEE-473C-9529-E8CBBBC82368}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFED3C0E-DB56-4784-8123-CB4E7E70188F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFED3C0E-DB56-4784-8123-CB4E7E70188F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFED3C0E-DB56-4784-8123-CB4E7E70188F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFED3C0E-DB56-4784-8123-CB4E7E70188F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

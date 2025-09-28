@@ -1,0 +1,7 @@
+!Texture
+Id: 30779258-ae28-46a4-8296-55e5c3687fb6
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/mat/sat/ldem_4_uint.tif
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

@@ -1,0 +1,42 @@
+!MaterialAsset
+Id: 3f7d1144-8f15-4c60-a8cf-4c83072d5ed7
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Attributes:
+    Diffuse: !MaterialDiffuseMapFeature
+        DiffuseMap: !ComputeTextureColor
+            Texture: 3fbc4e5c-881b-4c3b-a043-fd2358dc9f8f:mat/earth/Earth-hires
+            FallbackValue:
+                Value: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+            Scale: {X: 1.0, Y: 1.0}
+            Offset: {X: 0.0, Y: 0.0}
+            Swizzle: null
+    DiffuseModel: !MaterialDiffuseLambertModelFeature {}
+    Occlusion: !MaterialOcclusionMapFeature
+        AmbientOcclusionMap: !ComputeFloat
+            Value: 0.729
+        DirectLightingFactor: !ComputeFloat
+            Value: 0.613
+        CavityMap: !ComputeTextureScalar
+            Texture: ecb57816-a9c6-47b8-b5b1-2393364b4676:mat/earth/Earth-opac4096
+            FallbackValue:
+                Value: 1.0
+            Scale: {X: 1.0, Y: 1.0}
+            Offset: {X: 0.0, Y: 0.0}
+        DiffuseCavity: !ComputeFloat
+            Value: 0.197
+        SpecularCavity: !ComputeFloat
+            Value: 0.894
+    Overrides:
+        UVScale: {X: 1.0, Y: 1.0}
+Layers:
+    787b6eb4d796fac280894008a266c6d3:
+        Material: be5bc37f-d100-41ed-bb27-094c37eb5320:mat/EarthClouds
+        BlendMap: !ComputeTextureScalar
+            Texture: 3af1a3ef-ac28-480f-898e-22a109d1a635:mat/earth/EarthMapCloudsBW
+            FallbackValue:
+                Value: 1.0
+            Scale: {X: 1.0, Y: 1.0}
+            Offset: {X: 0.0, Y: 0.0}
+        Overrides:
+            UVScale: {X: 1.0, Y: 1.0}

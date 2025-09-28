@@ -1,0 +1,36 @@
+!SpriteSheet
+Id: 14d90654-947d-41a2-8d5c-bc89c273662f
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Type: UI
+ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
+Packing: {}
+Sprites:
+    755c6cd768aeaf3b16ba3735964fac6e:
+        Source: !file ../Resources/fullscreen.png
+        Name: fullscreen
+        TextureRegion: {X: 0, Y: 0, Width: 256, Height: 256}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    fb9a19665f647f816919867eaa32513d:
+        Source: !file ../Resources/fullscreen.png
+        Name: window
+        TextureRegion: {X: 256, Y: 0, Width: 256, Height: 256}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    0bb740f3daad928aadbdd484783302be:
+        Source: !file ../Resources/left.png
+        Name: left
+        TextureRegion: {X: 0, Y: 0, Width: 256, Height: 256}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    679685fb8b548c166fca743051b84e10:
+        Source: !file ../Resources/right.png
+        Name: right
+        TextureRegion: {X: 0, Y: 0, Width: 256, Height: 256}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}

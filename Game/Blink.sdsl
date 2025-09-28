@@ -1,0 +1,39 @@
+shader Blink : ComputeColor, Texturing
+{
+// Параметры для настройки мигания
+    static float Frequency = 2.0;  // Частота мигания (раз в секунду)
+    static float Intensity = 1.0;  // Интенсивность свечения
+    static float3 BaseColor = float3(1.0, 0.0, 0.0); // Базовый цвет (красный)
+    static float PointSize = 10.0; // Размер точки в пикселях (максимум 20)
+    override float4 Compute()
+    {
+        // Получаем координаты текстуры (UV)
+        float2 uv = streams.TexCoord.xy;
+
+        // Определяем центр круга (центр экрана)
+        float2 center = float2(0.5, 0.28);
+        //float2 center = float2(0.552, 0.259);
+
+        // Определяем радиус круга (например, 0.2)
+        float radius = 0.003;
+
+        // Определяем ширину размытия вокруг круга
+        float blurWidth = 0.01; // Ширина размытия
+
+        // Вычисляем расстояние от текущего пикселя до центра круга
+        float distanceToCenter = length(uv - center);
+
+        // Используем smoothstep для плавного перехода между кругом и его границей
+        float smoothEdge = smoothstep(radius, radius + blurWidth, distanceToCenter);
+
+        // Используем синусоидальную функцию для плавного изменения яркости
+        float brightness = sin(Global.Time * 3.0) * 0.5 + 0.1; // brightness изменяется от 0 до 1
+
+        // Интерполируем между красным цветом и черным в зависимости от smoothEdge
+        float4 redColor = float4(brightness, 0.0, 0.0, 1.0);
+        float4 blackColor = float4(0.0, 0.0, 0.0, 1.0);
+
+        // Возвращаем цвет с учетом размытия
+        return lerp(redColor, blackColor, smoothEdge);
+    }
+};

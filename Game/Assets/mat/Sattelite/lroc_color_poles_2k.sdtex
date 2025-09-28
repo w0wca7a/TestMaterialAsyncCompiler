@@ -1,0 +1,7 @@
+!Texture
+Id: 33bde445-6a3f-4e57-97b8-0515796e7d59
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/mat/sat/lroc_color_poles_2k.tif
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

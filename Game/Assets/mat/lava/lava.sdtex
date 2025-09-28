@@ -1,0 +1,7 @@
+!Texture
+Id: 161b01ab-057a-49e6-9eb9-6d43f87fdfc7
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/mat/lava/lava.jpg
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

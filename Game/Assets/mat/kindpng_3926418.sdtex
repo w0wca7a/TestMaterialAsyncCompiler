@@ -1,0 +1,7 @@
+!Texture
+Id: ec0f4c7b-6b1b-45ba-bc7d-42a3fb1db75b
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../Resources/Loader.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

@@ -1,0 +1,6 @@
+!Texture
+Id: 41af6bae-b574-4bae-8a5f-20fdf7306a86
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/mat/lava/lava bump.jpg
+Type: !GrayscaleTextureType {}

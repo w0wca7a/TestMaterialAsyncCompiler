@@ -1,0 +1,7 @@
+!Texture
+Id: f762adbc-dd0d-49b9-9e05-83aac953c665
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/mat/jungle/jungle cutout.jpg
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

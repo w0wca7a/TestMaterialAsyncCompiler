@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+	<ApplicationIcon>Resources\Test.ico</ApplicationIcon>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>$(MSBuildProjectName)</RootNamespace>
+    <OutputPath>Bin\$(Configuration)\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <!-- Force msbuild to check to rebuild this assembly instead of letting VS IDE guess -->
+    <DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
+    <UseWindowsForms>True</UseWindowsForms>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Game\**" />
+    <EmbeddedResource Remove="Game\**" />
+    <None Remove="Game\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Test.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Game\TestMaterialAsyncCompiler.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,36 @@
+!MaterialAsset
+Id: 6fe0e74f-53d6-48bb-92b4-76b7ac8744b7
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Attributes:
+    Diffuse: !MaterialDiffuseMapFeature
+        DiffuseMap: !ComputeTextureColor
+            Texture: d98de37f-d00a-43db-bf3b-2c09c82776ac:mat/gas/gas red
+            FallbackValue:
+                Value: {R: 0.3379804, G: 0.33031252, B: 0.94375, A: 1.0}
+            Scale: {X: 1.0, Y: 1.0}
+            Offset: {X: 0.0, Y: 0.0}
+            Swizzle: null
+    DiffuseModel: !MaterialDiffuseLambertModelFeature {}
+    Emissive: !MaterialEmissiveMapFeature
+        EmissiveMap: !ComputeBinaryColor
+            Operator: Multiply
+            LeftChild: !ComputeTextureColor
+                Texture: d98de37f-d00a-43db-bf3b-2c09c82776ac:mat/gas/gas red
+                FallbackValue:
+                    Value: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                Scale: {X: 1.0, Y: 1.0}
+                Offset: {X: 0.0, Y: 0.0}
+                Swizzle: null
+            RightChild: !ComputeColor
+                Value: {R: 0.94375, G: 0.25953123, B: 0.25953123, A: 1.0}
+        Intensity: !ComputeTextureScalar
+            Texture: d98de37f-d00a-43db-bf3b-2c09c82776ac:mat/gas/gas red
+            FallbackValue:
+                Value: 0.479
+            Channel: B
+            Scale: {X: 1.0, Y: 1.0}
+            Offset: {X: 0.0, Y: 0.0}
+    Overrides:
+        UVScale: {X: 1.0, Y: 1.0}
+Layers: {}

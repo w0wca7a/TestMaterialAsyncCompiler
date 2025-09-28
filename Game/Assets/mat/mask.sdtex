@@ -1,0 +1,9 @@
+!Texture
+Id: 0076d256-bfdb-4b76-93e9-b55df9c2c604
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../Resources/mask.png
+IsCompressed: false
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
+GenerateMipmaps: false

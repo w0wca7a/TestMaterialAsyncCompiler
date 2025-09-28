@@ -1,0 +1,9 @@
+!Texture
+Id: a01f100a-27d2-4988-8a4d-a026347f7268
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../Resources/mat/logo.png
+IsCompressed: false
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
+GenerateMipmaps: false

@@ -1,0 +1,7 @@
+!Texture
+Id: ec2aee5c-37a7-4e29-b084-7940982bc5c6
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/mat/lava/lava glow.jpg
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

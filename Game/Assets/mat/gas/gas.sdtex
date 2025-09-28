@@ -1,0 +1,7 @@
+!Texture
+Id: 1872ef19-c959-45db-96d6-43e72d6b9f8d
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/mat/gas/gas.jpg
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

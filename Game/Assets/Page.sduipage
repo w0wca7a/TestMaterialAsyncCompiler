@@ -1,0 +1,188 @@
+!UIPageAsset
+Id: c1f09c60-92ca-4565-aa85-81be1f401866
+SerializedVersion: {Stride: 2.1.0.1}
+Tags:
+    - Page
+Design:
+    Resolution: {X: 1280.0, Y: 720.0, Z: 1000.0}
+Hierarchy:
+    RootParts:
+        - !Grid ref!! f9dcbb28-627f-45ca-ac5e-5893dce018d2
+    Parts:
+        -   UIElement: !ToggleButton
+                Id: 0843f95c-90b1-480d-bdb3-1db4db9c4cd6
+                DependencyProperties:
+                    990b9dd4fbbac290e885657923ff1991~GridBase.ColumnPropertyKey: 1
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                DrawLayerNumber: 2
+                HorizontalAlignment: Center
+                VerticalAlignment: Top
+                Margin: {Top: 25.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: FullScreenButton
+                Padding: {Left: 0.0, Top: 0.0, Right: 0.0, Bottom: 0.0}
+                Content: !Grid ref!! 2df137a6-135b-4ebd-94c3-b8014879e2ac
+                CheckedImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 11
+                UncheckedImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 13
+                IndeterminateImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 12
+        -   UIElement: !ImageElement
+                Id: 085c9a5e-de72-4a2e-953c-0afb7c005d38
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Width: 40.0
+                Height: 40.0
+                HorizontalAlignment: Center
+                VerticalAlignment: Center
+                Margin: {}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Source: !SpriteFromSheet
+                    Sheet: 14d90654-947d-41a2-8d5c-bc89c273662f:SpriteSheet
+                    CurrentFrame: 2
+                Color: {R: 255, G: 255, B: 255, A: 255}
+        -   UIElement: !ImageElement
+                Id: 2ae13a30-03e1-4e10-9822-377fed41aaa2
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Width: 40.0
+                Height: 40.0
+                HorizontalAlignment: Center
+                VerticalAlignment: Center
+                Margin: {}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Source: !SpriteFromSheet
+                    Sheet: 14d90654-947d-41a2-8d5c-bc89c273662f:SpriteSheet
+                    CurrentFrame: 3
+                Color: {R: 255, G: 255, B: 255, A: 255}
+        -   UIElement: !Grid
+                Id: 2df137a6-135b-4ebd-94c3-b8014879e2ac
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Height: 35.0
+                Margin: {}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Children:
+                    b45831071832ffef546133d4dbf77793: !ImageElement ref!! 615d0551-7a75-4e46-bb8e-11b386f43166
+                    159ad1793086910b08a21210719d6dd8: !TextBlock ref!! f41873de-00d6-49de-a88b-2df468cb918e
+                RowDefinitions: {}
+                ColumnDefinitions:
+                    ce57797b1dedc91b4a8cdbe3185c2576:
+                        Type: Auto
+                    7abc250b28a2040a717fedd64c38b4aa: {}
+                LayerDefinitions: {}
+        -   UIElement: !ImageElement
+                Id: 615d0551-7a75-4e46-bb8e-11b386f43166
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Margin: {}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: FullscreenImage
+                Source: !SpriteFromSheet
+                    Sheet: 14d90654-947d-41a2-8d5c-bc89c273662f:SpriteSheet
+                    CurrentFrame: 1
+                Color: {R: 255, G: 255, B: 255, A: 255}
+        -   UIElement: !Button
+                Id: d555123f-a045-4c45-a3e9-903d7baaba6e
+                DependencyProperties:
+                    14f18405ccedf206afcbcd2a1ac7ba73~GridBase.RowPropertyKey: 1
+                    b92b3fe154a19db76930e05f2950dc41~GridBase.ColumnPropertyKey: 2
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                DrawLayerNumber: 2
+                Width: 40.0
+                Height: 130.0
+                HorizontalAlignment: Right
+                VerticalAlignment: Center
+                Margin: {Left: 10.0, Right: 10.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: RightButton
+                Padding: {Top: 0.0, Right: 5.0, Bottom: 0.0}
+                Content: !ImageElement ref!! 2ae13a30-03e1-4e10-9822-377fed41aaa2
+                PressedImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 2
+                NotPressedImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 1
+                MouseOverImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+        -   UIElement: !Button
+                Id: dbd1b97d-1c4d-4765-ae07-57bad0fbdf6e
+                DependencyProperties:
+                    14f18405ccedf206afcbcd2a1ac7ba73~GridBase.RowPropertyKey: 1
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                DrawLayerNumber: 2
+                Width: 40.0
+                Height: 130.0
+                HorizontalAlignment: Left
+                VerticalAlignment: Center
+                Margin: {Left: 10.0, Right: 10.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: LeftButton
+                Padding: {Left: 5.0, Top: 0.0, Bottom: 0.0}
+                Content: !ImageElement ref!! 085c9a5e-de72-4a2e-953c-0afb7c005d38
+                PressedImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 2
+                NotPressedImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 1
+                MouseOverImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+        -   UIElement: !TextBlock
+                Id: f41873de-00d6-49de-a88b-2df468cb918e
+                DependencyProperties:
+                    36651453727f373495b7ee1f368cbec3~GridBase.ColumnPropertyKey: 1
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                HorizontalAlignment: Center
+                VerticalAlignment: Center
+                Margin: {}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Text: Fullscreen
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 20.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
+                OutlineColor: {R: 0, G: 0, B: 0, A: 255}
+                OutlineThickness: 0.0
+                TextAlignment: Center
+        -   UIElement: !Grid
+                Id: f9dcbb28-627f-45ca-ac5e-5893dce018d2
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Margin: {}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Children:
+                    9d0174cbc333c27ba5c707e2de1ebc0a: !Button ref!! dbd1b97d-1c4d-4765-ae07-57bad0fbdf6e
+                    fd77cd5df17138de331a9e55c6388cd6: !Button ref!! d555123f-a045-4c45-a3e9-903d7baaba6e
+                    61b8fa2684ae7e6b21087498fab4ae1a: !ToggleButton ref!! 0843f95c-90b1-480d-bdb3-1db4db9c4cd6
+                RowDefinitions:
+                    9ea8ae81ac44697c56c5082694427a9b: {}
+                    71c0bfc1b0dde0c00f7b335dd98fa0f5: {}
+                    17c54b0565c72a7bf69cf2339240ff3f: {}
+                ColumnDefinitions:
+                    a6f00f75792492a1df26dea7499f5ff3: {}
+                    d6afc1392c5978693481246dbb360813: {}
+                    03001eab31f88f0520c909719b848710: {}
+                LayerDefinitions: {}

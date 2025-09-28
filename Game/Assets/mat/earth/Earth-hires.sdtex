@@ -1,0 +1,7 @@
+!Texture
+Id: 3fbc4e5c-881b-4c3b-a043-fd2358dc9f8f
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/mat/earth/Earth-hires.jpg
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

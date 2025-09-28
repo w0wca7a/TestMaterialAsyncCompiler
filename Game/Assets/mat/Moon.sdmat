@@ -1,0 +1,32 @@
+!MaterialAsset
+Id: 644974ce-3550-48f1-ae0f-1f87c11085a8
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Attributes:
+    Tessellation: !MaterialTessellationPNFeature
+        Enabled: false
+        TriangleSize: 10.0
+        AdjacentEdgeAverage: false
+    Displacement: !MaterialDisplacementMapFeature
+        Enabled: false
+        DisplacementMap: !ComputeTextureScalar
+            Texture: 30779258-ae28-46a4-8296-55e5c3687fb6:mat/Sattelite/ldem_4_uint
+            FallbackValue:
+                Value: 1.0
+            Scale: {X: 1.0, Y: 1.0}
+            Offset: {X: 0.0, Y: 0.0}
+        Intensity: !ComputeFloat
+            Value: 0.08
+        Stage: Vertex
+    Diffuse: !MaterialDiffuseMapFeature
+        DiffuseMap: !ComputeTextureColor
+            Texture: 33bde445-6a3f-4e57-97b8-0515796e7d59:mat/Sattelite/lroc_color_poles_2k
+            FallbackValue:
+                Value: {R: 1.0, G: 0.8392157, B: 0.43529412, A: 1.0}
+            Scale: {X: 1.0, Y: 1.0}
+            Offset: {X: 0.0, Y: 0.0}
+            Swizzle: null
+    DiffuseModel: !MaterialDiffuseLambertModelFeature {}
+    Overrides:
+        UVScale: {X: 1.0, Y: 1.0}
+Layers: {}

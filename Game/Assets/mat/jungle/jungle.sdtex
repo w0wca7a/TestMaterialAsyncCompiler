@@ -1,0 +1,7 @@
+!Texture
+Id: 3003b3f4-d61d-4e1e-835c-02cb41f49fce
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/mat/jungle/jungle.jpg
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

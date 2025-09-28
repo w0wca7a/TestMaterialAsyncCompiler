@@ -1,0 +1,6 @@
+!SkyboxAsset
+Id: d764e159-5ec6-4a9b-b424-dcead516e380
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+CubeMap: 478a016c-570a-47b5-9652-e2f1d9ead86e:mat/TychoSkymapII.t3_08192x04096
+IsSpecularOnly: true

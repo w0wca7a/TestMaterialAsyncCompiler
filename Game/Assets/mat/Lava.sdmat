@@ -1,0 +1,39 @@
+!MaterialAsset
+Id: b188c149-77b6-4f28-9fb0-25d4a46d3fbe
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Attributes:
+    Surface: !MaterialNormalMapFeature
+        NormalMap: !ComputeBinaryColor
+            Operator: ColorDodge
+            LeftChild: !ComputeColor
+                Value: {R: 0.5372549, G: 0.03137255, B: 0.52156866, A: 1.0}
+            RightChild: !ComputeTextureColor
+                Texture: 41af6bae-b574-4bae-8a5f-20fdf7306a86:mat/lava/lava bump
+                FallbackValue:
+                    Value: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                Scale: {X: 1.0, Y: 1.0}
+                Offset: {X: 0.0, Y: 0.0}
+                Swizzle: null
+    Diffuse: !MaterialDiffuseMapFeature
+        DiffuseMap: !ComputeTextureColor
+            Texture: 161b01ab-057a-49e6-9eb9-6d43f87fdfc7:mat/lava/lava
+            FallbackValue:
+                Value: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+            Scale: {X: 1.0, Y: 1.0}
+            Offset: {X: 0.0, Y: 0.0}
+            Swizzle: null
+    DiffuseModel: !MaterialDiffuseLambertModelFeature {}
+    Emissive: !MaterialEmissiveMapFeature
+        EmissiveMap: !ComputeTextureColor
+            Texture: ec2aee5c-37a7-4e29-b084-7940982bc5c6:mat/lava/lava glow
+            FallbackValue:
+                Value: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+            Scale: {X: 1.0, Y: 1.0}
+            Offset: {X: 0.0, Y: 0.0}
+            Swizzle: null
+        Intensity: !ComputeFloat
+            Value: 1.0
+    Overrides:
+        UVScale: {X: 1.0, Y: 1.0}
+Layers: {}
