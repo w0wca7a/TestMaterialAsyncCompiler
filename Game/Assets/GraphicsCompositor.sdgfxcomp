@@ -208,15 +208,15 @@ Game: !Stride.Rendering.Compositing.SceneCameraRenderer,Stride.Engine
         Children:
             d39c5ddbf8b7d5ca02bafb6496b1cc3c: !Stride.Rendering.Compositing.ForwardRenderer,Stride.Engine ref!! 97719b9d-b44c-48f2-ae4c-bb5fcf4444d9
             01d338078e9b21121ead0868932613dd: !Stride.Rendering.Compositing.DebugRenderer,Stride.Rendering ref!! 4a7994df-c57c-4be0-8487-889f4e946391
-            3b285483418c56314d8bfe4a67fbba01*: !TestLoading.Renderers.AsyncMaterialCompilationRenderer,TestMaterialAsyncCompiler
-                Id: 87a994a5-63af-4f01-99f5-ee06f64567d9
-                CompileTaskPriority: -1
             99d1f266d36d033b26d81691f71159f0*: !TestLoading.Renderers.TargetRenderer,TestMaterialAsyncCompiler
                 Id: 2f7876b4-6cb4-4246-a36b-4c12a1eee59b
                 TargetTexture: f5ea3d70-2df7-4c50-8f24-a22d4aa593f0:mat/target
-            a1e6f5c5136f99791ef46535c0b076ec*: !TestLoading.Renderers.CircleProgressBar,TestMaterialAsyncCompiler
-                Id: 90310d47-d08a-4aa8-9850-7714afe5ceda
-                LoadingTexture: ec0f4c7b-6b1b-45ba-bc7d-42a3fb1db75b:mat/kindpng_3926418
+            5de9f439fa0137e2e7baf15f466078a5*: !TestMaterialAsyncCompiler.Renderers.AsyncMaterialCompilationRenderer,TestMaterialAsyncCompiler
+                Id: c18874c4-cac5-4779-b568-02b52cd27007
+                CompileTaskPriority: -1
+            ca3385df8fc2ec4c310bafb75f3d9f76*: !TestMaterialAsyncCompiler.Renderers.CircleProgressBar,TestMaterialAsyncCompiler
+                Id: a7a471e0-c630-442e-a361-93247803d0b8
+                LoadingTexture: ec0f4c7b-6b1b-45ba-bc7d-42a3fb1db75b:mat/loader
                 TextureScale: 0.25
                 RotationSpeed: 1.0
     RenderMask: All

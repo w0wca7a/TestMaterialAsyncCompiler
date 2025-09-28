@@ -96,8 +96,8 @@ Hierarchy:
                         Id: e8babdba-b3d5-4421-8d4a-525fd763f43c
                         Model: b5cc08dd-e053-4dd7-b6c1-5d2d8fe53092:GeoSphere
                         Materials: {}
-                    756497ed0cc0c8b28a0f45f9bd7537a2: !TestLoading.Rotation,TestMaterialAsyncCompiler
-                        Id: 9d2d9021-9c12-4f8f-8628-30a1db3fe866
+                    9f5114d38752b99059c0e808d4f25a93: !TestMaterialAsyncCompiler.Rotation,TestMaterialAsyncCompiler
+                        Id: 9e1495a2-905b-4068-b431-49ccdd4ea82d
                         MainRot: 0.8
                         ChildRot: 3.0
         -   Entity:
@@ -116,11 +116,11 @@ Hierarchy:
                         Materials:
                             5564249661c6cac64666e35314532cb7~1: c8a26474-b9c6-47f7-859f-bcc6ee5eec4c:mat/glowMT_mask
                             abfcf4c05a33fc97091958fb2f630614~4: 1fc0cd78-7259-4d78-a394-3bbc7704abc7:mat/logo_
-                    7265b031e777ddfd1121b483fe1fbc54: !TestLoading.LowBattery,TestMaterialAsyncCompiler
-                        Id: fb6f84ee-0c5d-41a9-b45b-8160d9fd77fd
+                    68cad6e32d7091add508b8d674d47c91: !TestMaterialAsyncCompiler.LowBattery,TestMaterialAsyncCompiler
+                        Id: 0bcb16f5-3f13-4167-b0e6-0fb1a8e0b953
                         Texture: 0076d256-bfdb-4b76-93e9-b55df9c2c604:mat/mask
-                    78b48ea0ab4ba274944786c817423039: !TestLoading.MannequinMotion,TestMaterialAsyncCompiler
-                        Id: 17a81470-ba2a-47e1-aa0d-bdad13d63344
+                    37146c3f38861367a19a7a59d8363c0a: !TestMaterialAsyncCompiler.MannequinMotion,TestMaterialAsyncCompiler
+                        Id: e0754628-e628-4e80-abe4-9fad190f5ad7
             Base:
                 BasePartAsset: 8d4fbf24-aeb1-4312-9a27-5e1d07f7cb50:Prefab
                 BasePartId: eda05b7d-4244-494b-9553-39f5c6cb1ef8
@@ -188,8 +188,8 @@ Hierarchy:
                         Id: 86999a55-beb8-4485-8587-5e87903b4f3a
                         Texture: 478a016c-570a-47b5-9652-e2f1d9ead86e:mat/TychoSkymapII.t3_08192x04096
                         Intensity: 0.25
-                    1553f4b471866d2dae23bc46f08ad9e2: !TestLoading.SkyboxRotation,TestMaterialAsyncCompiler
-                        Id: 29a5eeda-8174-4748-9f13-18b9dffb53a3
+                    c189664893602616bedaa1db4106a7de: !TestMaterialAsyncCompiler.SkyboxRotation,TestMaterialAsyncCompiler
+                        Id: 90fd85fc-5b52-483c-98f1-cdf438329ad0
                         MainRot: 0.15
         -   Entity:
                 Id: f9567b8b-f74a-40f9-84b7-6f51289b96a8
