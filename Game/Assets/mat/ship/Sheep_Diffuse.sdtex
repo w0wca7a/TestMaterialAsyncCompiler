@@ -1,7 +1,0 @@
-!Texture
-Id: 12bacbf6-7e4f-4ec3-8557-fdca2cdf782a
-SerializedVersion: {Stride: 2.0.0.0}
-Tags: []
-Source: !file ../../../Resources/mat/ship/Sheep_Diffuse.tif
-Type: !ColorTextureType
-    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

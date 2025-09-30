@@ -22,19 +22,19 @@ public class BasicCameraController : SyncScript
     private float yaw;
     private float pitch;
 
-    public bool Gamepad { get; set; } = false;
+    //public bool Gamepad { get; set; } = false;
 
     public Vector3 KeyboardMovementSpeed { get; set; } = new Vector3(5.0f);
 
-    public Vector3 TouchMovementSpeed { get; set; } = new Vector3(0.7f, 0.7f, 0.3f);
+    //public Vector3 TouchMovementSpeed { get; set; } = new Vector3(0.7f, 0.7f, 0.3f);
 
     public float SpeedFactor { get; set; } = 5.0f;
 
-    public Vector2 KeyboardRotationSpeed { get; set; } = new Vector2(3.0f);
+    //public Vector2 KeyboardRotationSpeed { get; set; } = new Vector2(3.0f);
 
     public Vector2 MouseRotationSpeed { get; set; } = new Vector2(1.0f, 1.0f);
 
-    public Vector2 TouchRotationSpeed { get; set; } = new Vector2(1.0f, 0.7f);
+    //public Vector2 TouchRotationSpeed { get; set; } = new Vector2(1.0f, 0.7f);
 
     public override void Start()
     {
@@ -66,38 +66,9 @@ public class BasicCameraController : SyncScript
 
         // Keyboard and Gamepad based movement
         {
-            // Our base speed is: one unit per second:
-            //    deltaTime contains the duration of the previous frame, let's say that in this update
-            //    or frame it is equal to 1/60, that means that the previous update ran 1/60 of a second ago
-            //    and the next will, in most cases, run in around 1/60 of a second from now. Knowing that,
-            //    we can move 1/60 of a unit on this frame so that in around 60 frames(1 second)
-            //    we will have travelled one whole unit in a second.
-            //    If you don't use deltaTime your speed will be dependant on the amount of frames rendered
-            //    on screen which often are inconsistent, meaning that if the player has performance issues,
-            //    this entity will move around slower.
-            float speed = 1f * deltaTime;
+            float speed = 0.1f * deltaTime;
 
             Vector3 dir = Vector3.Zero;
-
-            if (Gamepad && Input.HasGamePad)
-            {
-                GamePadState padState = Input.DefaultGamePad.State;
-                // LeftThumb can be positive or negative on both axis (pushed to the right or to the left)
-                dir.Z += padState.LeftThumb.Y;
-                dir.X += padState.LeftThumb.X;
-
-                // Triggers are always positive, in this case using one to increase and the other to decrease
-                dir.Y -= padState.LeftTrigger;
-                dir.Y += padState.RightTrigger;
-
-                // Increase speed when pressing A, LeftShoulder or RightShoulder
-                // Here:does the enum flag 'Buttons' has one of the flag ('A','LeftShoulder' or 'RightShoulder') set
-                if ((padState.Buttons & (GamePadButton.A | GamePadButton.LeftShoulder | GamePadButton.RightShoulder)) != 0)
-                {
-                    speed *= SpeedFactor;
-                }
-            }
-
             if (Input.HasKeyboard)
             {
                 // Move with keyboard
@@ -137,12 +108,6 @@ public class BasicCameraController : SyncScript
                     speed *= SpeedFactor;
                 }
 
-                // If the player pushes down two or more buttons, the direction and ultimately the base speed
-                // will be greater than one (vector(1, 1) is farther away from zero than vector(0, 1)),
-                // normalizing the vector ensures that whichever direction the player chooses, that direction
-                // will always be at most one unit in length.
-                // We're keeping dir as is if isn't longer than one to retain sub unit movement:
-                // a stick not entirely pushed forward should make the entity move slower.
                 if (dir.Length() > 1f)
                 {
                     dir = Vector3.Normalize(dir);
@@ -153,60 +118,8 @@ public class BasicCameraController : SyncScript
             translation += dir * KeyboardMovementSpeed * speed;
         }
 
-        // Keyboard and Gamepad based Rotation
-        {
-            // See Keyboard & Gamepad translation's deltaTime usage
-            float speed = 1f * deltaTime;
-            Vector2 rotation = Vector2.Zero;
-            if (Gamepad && Input.HasGamePad)
-            {
-                GamePadState padState = Input.DefaultGamePad.State;
-                rotation.X += padState.RightThumb.Y;
-                rotation.Y += -padState.RightThumb.X;
-            }
-
-            if (Input.HasKeyboard)
-            {
-                if (Input.IsKeyDown(Keys.NumPad2))
-                {
-                    rotation.X += 1;
-                }
-                if (Input.IsKeyDown(Keys.NumPad8))
-                {
-                    rotation.X -= 1;
-                }
-
-                if (Input.IsKeyDown(Keys.NumPad4))
-                {
-                    rotation.Y += 1;
-                }
-                if (Input.IsKeyDown(Keys.NumPad6))
-                {
-                    rotation.Y -= 1;
-                }
-
-                // See Keyboard & Gamepad translation's Normalize() usage
-                if (rotation.Length() > 1f)
-                {
-                    rotation = Vector2.Normalize(rotation);
-                }
-            }
-
-            // Modulate by speed
-            rotation *= KeyboardRotationSpeed * speed;
-
-            // Finally, push all of that to pitch & yaw which are going to be used within UpdateTransform()
-            pitch += rotation.X;
-            yaw += rotation.Y;
-        }
-
         // Mouse movement and gestures
         {
-            // This type of input should not use delta time at all, they already are frame-rate independent.
-            //    Lets say that you are going to move your finger/mouse for one second over 40 units, it doesn't matter
-            //    the amount of frames occuring within that time frame, each frame will receive the right amount of delta:
-            //    a quarter of a second -> 10 units, half a second -> 20 units, one second -> your 40 units.
-
             if (Input.HasMouse)
             {
                 // Rotate with mouse
@@ -222,29 +135,6 @@ public class BasicCameraController : SyncScript
                 {
                     Input.UnlockMousePosition();
                     Game.IsMouseVisible = true;
-                }
-            }
-
-            // Handle gestures
-            foreach (var gestureEvent in Input.GestureEvents)
-            {
-                switch (gestureEvent.Type)
-                {
-                    // Rotate by dragging
-                    case GestureType.Drag:
-                        var drag = (GestureEventDrag)gestureEvent;
-                        var dragDistance = drag.DeltaTranslation;
-                        yaw = -dragDistance.X * TouchRotationSpeed.X;
-                        pitch = -dragDistance.Y * TouchRotationSpeed.Y;
-                        break;
-
-                    // Move along z-axis by scaling and in xy-plane by multi-touch dragging
-                    case GestureType.Composite:
-                        var composite = (GestureEventComposite)gestureEvent;
-                        translation.X = -composite.DeltaTranslation.X * TouchMovementSpeed.X;
-                        translation.Y = -composite.DeltaTranslation.Y * TouchMovementSpeed.Y;
-                        translation.Z = MathF.Log(composite.DeltaScale + 1) * TouchMovementSpeed.Z;
-                        break;
                 }
             }
         }

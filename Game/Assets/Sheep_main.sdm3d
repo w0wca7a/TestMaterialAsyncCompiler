@@ -19,7 +19,7 @@ Materials:
     12904828cbcd9cc5ca20d526c99f3683:
         Name: "Материал.1"
         MaterialInstance:
-            Material: null
+            Material: 280c66c6-e0df-4a47-95f5-7f25d92d0902:mat/ship_window
 DeduplicateMaterials: false
 Modifiers: {}
 ~SourceHashes:

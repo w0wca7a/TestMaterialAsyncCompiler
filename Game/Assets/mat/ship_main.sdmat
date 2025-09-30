@@ -19,18 +19,17 @@ Attributes:
             Scale: {X: 1.0, Y: 1.0}
             Offset: {X: 0.0, Y: 0.0}
     Diffuse: !MaterialDiffuseMapFeature
-        DiffuseMap: !ComputeBinaryColor
-            Operator: LinearDodge
-            LeftChild: !ComputeColor
-                Value: {R: 0.22745098, G: 0.7058824, B: 0.6313726, A: 1.0}
-            RightChild: !ComputeTextureColor
-                Texture: 12bacbf6-7e4f-4ec3-8557-fdca2cdf782a:mat/ship/Sheep_Diffuse
-                FallbackValue:
-                    Value: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
-                Scale: {X: 1.0, Y: 1.0}
-                Offset: {X: 0.0, Y: 0.0}
-                Swizzle: null
+        DiffuseMap: !ComputeColor
+            Value: {R: 0.22745098, G: 0.7058824, B: 0.6313726, A: 1.0}
     DiffuseModel: !MaterialDiffuseLambertModelFeature {}
+    Specular: !MaterialMetalnessMapFeature
+        MetalnessMap: !ComputeFloat
+            Value: 0.737
+    SpecularModel: !MaterialSpecularMicrofacetModelFeature
+        Fresnel: !MaterialSpecularMicrofacetFresnelSchlick {}
+        Visibility: !MaterialSpecularMicrofacetVisibilitySmithSchlickGGX {}
+        NormalDistribution: !MaterialSpecularMicrofacetNormalDistributionGGX {}
+        Environment: !MaterialSpecularMicrofacetEnvironmentGGXLUT {}
     Occlusion: !MaterialOcclusionMapFeature
         AmbientOcclusionMap: !ComputeTextureScalar
             Texture: 87525c5e-9df8-49fa-97ff-e82d26404b0b:mat/ship/Sheep_Ambient_Occlusion

@@ -84,22 +84,14 @@ Hierarchy:
                         Slot: a969c339-0904-4e7e-97f2-b33cdbb7301a
                     fee5e384928dc1eaf3229bbf8d5fa644: !TestMaterialAsyncCompiler.BasicCameraController,TestMaterialAsyncCompiler
                         Id: 80ce2ca7-cf18-4433-acff-d88f24288558
-                        Gamepad: false
-                        KeyboardMovementSpeed: {X: 5.0, Y: 5.0, Z: 5.0}
-                        TouchMovementSpeed: {X: 0.7, Y: 0.7, Z: 0.3}
-                        SpeedFactor: 5.0
-                        KeyboardRotationSpeed: {X: 3.0, Y: 3.0}
+                        KeyboardMovementSpeed: {X: 1.0, Y: 1.0, Z: 1.0}
+                        SpeedFactor: 1.5
                         MouseRotationSpeed: {X: 1.0, Y: 1.0}
-                        TouchRotationSpeed: {X: 1.0, Y: 0.7}
                     a334138f4b0b7586bf2492458263fc70: !TestMaterialAsyncCompiler.BasicCameraController,TestMaterialAsyncCompiler
                         Id: 4b4a7645-6ad8-452c-b156-80b04aeb9292
-                        Gamepad: false
                         KeyboardMovementSpeed: {X: 5.0, Y: 5.0, Z: 5.0}
-                        TouchMovementSpeed: {X: 0.7, Y: 0.7, Z: 0.3}
                         SpeedFactor: 5.0
-                        KeyboardRotationSpeed: {X: 3.0, Y: 3.0}
                         MouseRotationSpeed: {X: 1.0, Y: 1.0}
-                        TouchRotationSpeed: {X: 1.0, Y: 0.7}
                     14fb741e8eef5d5415a19fc8f9b1c4ec: !TestMaterialAsyncCompiler.CameraLookAtEntitySimple,TestMaterialAsyncCompiler
                         Id: 97ffd7b8-2705-4bdf-b46b-cc0a1824887f
                         EntityToFollow: ref!! d2019c60-26c7-4d98-9da3-e0338a70a5b8
