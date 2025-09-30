@@ -1,0 +1,22 @@
+#define WaveDensity 0.85
+
+shader Engine<float Intensity> : Texturing, ComputeColor
+{
+    override float4 Compute()
+    {
+        float3 HotColor = float3(1.0, 0.8, 0.1);
+        float3 CoolColor = float3(0.9, 0.3, 0.0);
+        float2 uv = streams.TexCoord.xy * 2.0 - 1.0;
+        float dist = length(uv);
+        float wave = sin(dist * WaveDensity * 5.0) * 0.5 + 0.5;
+        wave = pow(wave, 3.0);
+        float shape = 1.0 - dist;
+        shape = pow(shape, 2.0);
+        float alpha = wave * shape;
+        float3 color = lerp(CoolColor, HotColor, wave);
+        color = lerp(color, HotColor, shape);
+        float3 finalColor = lerp(float3(0,0,0), color * alpha, Intensity);
+        
+        return float4(finalColor, 1.0f);
+    }
+};

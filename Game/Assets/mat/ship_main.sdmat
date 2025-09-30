@@ -1,0 +1,54 @@
+!MaterialAsset
+Id: 68fc7e6e-3c32-47da-ba9b-42a1e1f8e020
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Attributes:
+    Surface: !MaterialNormalMapFeature
+        NormalMap: !ComputeTextureColor
+            Texture: 12bf5985-8a69-4a05-9b9e-4104380651f4:mat/ship/Sheep_Normal
+            FallbackValue:
+                Value: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+            Scale: {X: 1.0, Y: 1.0}
+            Offset: {X: 0.0, Y: 0.0}
+            Swizzle: null
+    MicroSurface: !MaterialGlossinessMapFeature
+        GlossinessMap: !ComputeTextureScalar
+            Texture: 64efac68-55a6-46a2-b5cb-12d89f48ddf4:mat/ship/Sheep_Glossiness
+            FallbackValue:
+                Value: 1.0
+            Scale: {X: 1.0, Y: 1.0}
+            Offset: {X: 0.0, Y: 0.0}
+    Diffuse: !MaterialDiffuseMapFeature
+        DiffuseMap: !ComputeBinaryColor
+            Operator: LinearDodge
+            LeftChild: !ComputeColor
+                Value: {R: 0.22745098, G: 0.7058824, B: 0.6313726, A: 1.0}
+            RightChild: !ComputeTextureColor
+                Texture: 12bacbf6-7e4f-4ec3-8557-fdca2cdf782a:mat/ship/Sheep_Diffuse
+                FallbackValue:
+                    Value: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                Scale: {X: 1.0, Y: 1.0}
+                Offset: {X: 0.0, Y: 0.0}
+                Swizzle: null
+    DiffuseModel: !MaterialDiffuseLambertModelFeature {}
+    Occlusion: !MaterialOcclusionMapFeature
+        AmbientOcclusionMap: !ComputeTextureScalar
+            Texture: 87525c5e-9df8-49fa-97ff-e82d26404b0b:mat/ship/Sheep_Ambient_Occlusion
+            FallbackValue:
+                Value: 1.0
+            Scale: {X: 1.0, Y: 1.0}
+            Offset: {X: 0.0, Y: 0.0}
+        DirectLightingFactor: !ComputeFloat
+            Value: 0.0
+        CavityMap: !ComputeTextureScalar
+            FallbackValue:
+                Value: 1.0
+            Scale: {X: 1.0, Y: 1.0}
+            Offset: {X: 0.0, Y: 0.0}
+        DiffuseCavity: !ComputeFloat
+            Value: 1.0
+        SpecularCavity: !ComputeFloat
+            Value: 1.0
+    Overrides:
+        UVScale: {X: 1.0, Y: 1.0}
+Layers: {}

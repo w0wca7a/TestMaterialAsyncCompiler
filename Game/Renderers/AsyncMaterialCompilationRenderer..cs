@@ -13,7 +13,6 @@ using Stride.Shaders.Compiler;
 
 namespace TestMaterialAsyncCompiler.Renderers;
 
-[Display("AsyncMaterialCompiler")]
 public class AsyncMaterialCompilationRenderer : SceneRendererBase, ISharedRenderer
 {
     [DataMember(1)]

@@ -6,7 +6,6 @@ using Stride.Rendering.Compositing;
 
 namespace TestMaterialAsyncCompiler.Renderers
 {
-    [Display("CircleProgressBar")]
     public class CircleProgressBar : SceneRendererBase
     {
         [DataMember(1)]

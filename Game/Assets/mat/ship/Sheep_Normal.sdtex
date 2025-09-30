@@ -1,0 +1,7 @@
+!Texture
+Id: 12bf5985-8a69-4a05-9b9e-4104380651f4
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/mat/ship/Sheep_Normal.tif
+Type: !NormalMapTextureType
+    InvertY: false

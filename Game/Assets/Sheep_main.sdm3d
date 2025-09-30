@@ -1,0 +1,25 @@
+!Model
+Id: ba224d18-8640-4644-98fe-9601f7a7633a
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../Resources/Sheep_main.fbx
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    0854435dd676f3bc4c748fcc781a93f9:
+        Name: "Материал"
+        MaterialInstance:
+            Material: 68fc7e6e-3c32-47da-ba9b-42a1e1f8e020:mat/ship_main
+    8a37375264a43ce68acf84d5e9db021c:
+        Name: "Материал.2"
+        MaterialInstance:
+            Material: a460a886-89d9-4fb5-bdd0-7520c1f626aa:mat/ship_engine
+            IsShadowCaster: false
+    12904828cbcd9cc5ca20d526c99f3683:
+        Name: "Материал.1"
+        MaterialInstance:
+            Material: null
+DeduplicateMaterials: false
+Modifiers: {}
+~SourceHashes:
+    7c0accb62167d5bdb474357aa5631178~../Resources/Sheep_main.fbx: 2b74b7d1b19d6fc831adaaf4ca85e19e

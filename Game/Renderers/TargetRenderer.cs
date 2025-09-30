@@ -7,11 +7,10 @@ using Stride.Graphics;
 using Stride.Rendering;
 using Stride.Rendering.Compositing;
 using TestMaterialAsyncCompiler.Helper;
-using TestMaterialAsyncCompiler.Renderers;
 
-namespace TestLoading.Renderers
+namespace TestMaterialAsyncCompiler.Renderers
 {
-    public class TargetRenderer : SceneRendererBase
+    public class TargetRenderer : SceneRendererBase, ISharedRenderer
     {
         public Texture TargetTexture;
         private SpriteBatch _spriteBatch;

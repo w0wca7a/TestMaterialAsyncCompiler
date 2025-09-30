@@ -1,0 +1,21 @@
+!MaterialAsset
+Id: a460a886-89d9-4fb5-bdd0-7520c1f626aa
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Attributes:
+    Diffuse: !MaterialDiffuseMapFeature
+        DiffuseMap: !ComputeColor
+            Value: {R: 0.055124998, G: 0.05625, B: 0.049218748, A: 1.0}
+    DiffuseModel: !MaterialDiffuseLambertModelFeature {}
+    Emissive: !MaterialEmissiveMapFeature
+        EmissiveMap: !ComputeShaderClassColor
+            MixinReference: Engine
+            Generics:
+                fb013a82137a38f1202a868093dd251d~Intensity: !ComputeColorParameterFloat
+                    Value: 1.0
+            CompositionNodes: {}
+        Intensity: !ComputeFloat
+            Value: 16.0
+    Overrides:
+        UVScale: {X: 1.0, Y: 1.0}
+Layers: {}

@@ -1,0 +1,6 @@
+!Texture
+Id: 64efac68-55a6-46a2-b5cb-12d89f48ddf4
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/mat/ship/Sheep_Glossiness.tif
+Type: !GrayscaleTextureType {}

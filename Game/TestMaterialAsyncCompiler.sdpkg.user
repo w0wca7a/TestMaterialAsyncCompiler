@@ -2,8 +2,8 @@
 Settings:
     Package/SceneSettings:
         e438d201-442b-4cee-8d0e-71f3a9cfb4aa:
-            CamPosition: {X: 4.0, Y: 2.0, Z: 4.0}
-            CamPitchYaw: {X: -0.18912819, Y: 0.8551324}
+            CamPosition: {X: -0.5004269, Y: 2.4172118, Z: 16.579659}
+            CamPitchYaw: {X: -0.2660205, Y: 0.010709465}
             CamProjection: Perspective
             CamVerticalFieldOfView: 45.0
             CamOrthographicSize: 10.0
@@ -18,7 +18,7 @@ Settings:
             ScaleSnapActive: false
             ScaleSnapValue: 1.1
             SceneUnit: 1.0
-            SelectionMaskVisible: true
+            SelectionMaskVisible: false
             GridVisible: true
             GridColor: {R: 0.7058824, G: 0.7058824, B: 0.7058824}
             GridOpacity: 0.35
@@ -75,3 +75,9 @@ Settings:
             LightProbeWireframe: false
             LightProbeBounces: 1
             SceneLoaded: false
+    Templates/ModelFromFile/DeduplicateMaterials: false
+    Templates/ModelFromFile/DefaultSkeleton: 00000000-0000-0000-0000-000000000000
+    Templates/ModelFromFile/ImportAnimations: false
+    Templates/ModelFromFile/ImportMaterials: false
+    Templates/ModelFromFile/ImportSkeleton: false
+    Templates/ModelFromFile/ImportTextures: false
