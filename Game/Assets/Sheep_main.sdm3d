@@ -5,6 +5,7 @@ Tags: []
 Source: !file ../Resources/Sheep_main.fbx
 Skeleton: null
 PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+ScaleImport: 0.01
 Materials:
     0854435dd676f3bc4c748fcc781a93f9:
         Name: "Материал"
