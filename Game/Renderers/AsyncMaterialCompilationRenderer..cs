@@ -14,7 +14,7 @@ using Stride.Shaders.Compiler;
 namespace TestMaterialAsyncCompiler.Renderers;
 
 [Display("AsyncMaterialCompiler")]
-public class AsyncMaterialCompilationRenderer : SceneRendererBase
+public class AsyncMaterialCompilationRenderer : SceneRendererBase, ISharedRenderer
 {
     [DataMember(1)]
     [DataMemberRange(-1, 100, 1, 10, 0)]
