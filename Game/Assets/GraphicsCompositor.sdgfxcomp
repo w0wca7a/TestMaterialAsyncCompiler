@@ -201,7 +201,7 @@ SharedRenderers:
         Antialiasing: !FXAAEffect {}
     2b6b9fbc03a2abd6842172758e084e4f*: !TestMaterialAsyncCompiler.Renderers.TargetRenderer,TestMaterialAsyncCompiler
         Id: fcbff185-8be5-4b1d-87bc-362b3b0f8c94
-        TargetTexture: null
+        TargetTexture: f5ea3d70-2df7-4c50-8f24-a22d4aa593f0:mat/target
     7aea8a675316a7e2b3bc582da9396aa2*: !TestMaterialAsyncCompiler.Renderers.AsyncMaterialCompilationRenderer,TestMaterialAsyncCompiler
         Id: 163f3bf9-9a48-4c7f-be6a-cbe7a00f8cc9
         CompileTaskPriority: -1
@@ -212,11 +212,15 @@ Game: !Stride.Rendering.Compositing.SceneCameraRenderer,Stride.Engine
     Child: !Stride.Rendering.Compositing.SceneRendererCollection,Stride.Rendering
         Id: 82568e46-92e7-421a-8dca-114a74e0cd69
         Children:
-            d39c5ddbf8b7d5ca02bafb6496b1cc3c: !Stride.Rendering.Compositing.ForwardRenderer,Stride.Engine ref!! 97719b9d-b44c-48f2-ae4c-bb5fcf4444d9
+            d39c5ddbf8b7d5ca02bafb6496b1cc3c*: !Stride.Rendering.Compositing.ForwardRenderer,Stride.Engine ref!! 97719b9d-b44c-48f2-ae4c-bb5fcf4444d9
             01d338078e9b21121ead0868932613dd: !Stride.Rendering.Compositing.DebugRenderer,Stride.Rendering ref!! 4a7994df-c57c-4be0-8487-889f4e946391
             5de9f439fa0137e2e7baf15f466078a5*: !TestMaterialAsyncCompiler.Renderers.TargetRenderer,TestMaterialAsyncCompiler ref!! fcbff185-8be5-4b1d-87bc-362b3b0f8c94
             d3fddd21a508318fc36604bb6490ae2f*: !TestMaterialAsyncCompiler.Renderers.AsyncMaterialCompilationRenderer,TestMaterialAsyncCompiler ref!! 163f3bf9-9a48-4c7f-be6a-cbe7a00f8cc9
     RenderMask: All
 SingleView: !Stride.Rendering.Compositing.ForwardRenderer,Stride.Engine ref!! 0fa78314-2ebe-4aab-b3b0-d889760b2fca
-Editor: !Stride.Rendering.Compositing.ForwardRenderer,Stride.Engine ref!! 97719b9d-b44c-48f2-ae4c-bb5fcf4444d9
+Editor*: !Stride.Rendering.Compositing.SceneRendererCollection,Stride.Rendering
+    Id: dcbbf658-e9d1-4c48-a953-469f0ce53db8
+    Children:
+        108e9491b9bd219af77a172e8982da1f: !Stride.Rendering.Compositing.ForwardRenderer,Stride.Engine ref!! 97719b9d-b44c-48f2-ae4c-bb5fcf4444d9
+        8b3f388fe74220df0092feb88c79d0cc: !TestMaterialAsyncCompiler.Renderers.TargetRenderer,TestMaterialAsyncCompiler ref!! fcbff185-8be5-4b1d-87bc-362b3b0f8c94
 BlockPositions: {}

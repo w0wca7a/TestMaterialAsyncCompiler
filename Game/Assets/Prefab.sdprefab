@@ -27,3 +27,5 @@ Hierarchy:
                         Texture: 0076d256-bfdb-4b76-93e9-b55df9c2c604:mat/mask
                     37146c3f38861367a19a7a59d8363c0a: !TestMaterialAsyncCompiler.MannequinMotion,TestMaterialAsyncCompiler
                         Id: f76c3b10-bacf-4f64-b5dc-d8fb02d30cdf
+                    06129b563518d656c3aa9fd36515fa35: !TestMaterialAsyncCompiler.Renderers.TargetComponent,TestMaterialAsyncCompiler
+                        Id: 8d1e1def-bb76-47e9-b4aa-fc86038c9e14

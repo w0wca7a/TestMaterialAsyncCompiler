@@ -81,6 +81,28 @@ Hierarchy:
                         Projection: Perspective
                         NearClipPlane: 0.01
                         Slot: a969c339-0904-4e7e-97f2-b33cdbb7301a
+                    fee5e384928dc1eaf3229bbf8d5fa644: !TestMaterialAsyncCompiler.BasicCameraController,TestMaterialAsyncCompiler
+                        Id: 80ce2ca7-cf18-4433-acff-d88f24288558
+                        Gamepad: false
+                        KeyboardMovementSpeed: {X: 5.0, Y: 5.0, Z: 5.0}
+                        TouchMovementSpeed: {X: 0.7, Y: 0.7, Z: 0.3}
+                        SpeedFactor: 5.0
+                        KeyboardRotationSpeed: {X: 3.0, Y: 3.0}
+                        MouseRotationSpeed: {X: 1.0, Y: 1.0}
+                        TouchRotationSpeed: {X: 1.0, Y: 0.7}
+                    a334138f4b0b7586bf2492458263fc70: !TestMaterialAsyncCompiler.BasicCameraController,TestMaterialAsyncCompiler
+                        Id: 4b4a7645-6ad8-452c-b156-80b04aeb9292
+                        Gamepad: false
+                        KeyboardMovementSpeed: {X: 5.0, Y: 5.0, Z: 5.0}
+                        TouchMovementSpeed: {X: 0.7, Y: 0.7, Z: 0.3}
+                        SpeedFactor: 5.0
+                        KeyboardRotationSpeed: {X: 3.0, Y: 3.0}
+                        MouseRotationSpeed: {X: 1.0, Y: 1.0}
+                        TouchRotationSpeed: {X: 1.0, Y: 0.7}
+                    14fb741e8eef5d5415a19fc8f9b1c4ec: !TestMaterialAsyncCompiler.CameraLookAtEntitySimple,TestMaterialAsyncCompiler
+                        Id: 97ffd7b8-2705-4bdf-b46b-cc0a1824887f
+                        EntityToFollow: ref!! d2019c60-26c7-4d98-9da3-e0338a70a5b8
+                        Speed: 1.0
         -   Entity:
                 Id: b33f444a-6bf5-47d5-82db-317fb744c4f5
                 Name: GeoSphere
@@ -121,6 +143,8 @@ Hierarchy:
                         Texture: 0076d256-bfdb-4b76-93e9-b55df9c2c604:mat/mask
                     37146c3f38861367a19a7a59d8363c0a: !TestMaterialAsyncCompiler.MannequinMotion,TestMaterialAsyncCompiler
                         Id: e0754628-e628-4e80-abe4-9fad190f5ad7
+                    06129b563518d656c3aa9fd36515fa35: !TestMaterialAsyncCompiler.Renderers.TargetComponent,TestMaterialAsyncCompiler
+                        Id: d1f05af6-128d-47a6-ac2e-0aaebb27a3a4
             Base:
                 BasePartAsset: 8d4fbf24-aeb1-4312-9a27-5e1d07f7cb50:Prefab
                 BasePartId: eda05b7d-4244-494b-9553-39f5c6cb1ef8
@@ -140,8 +164,6 @@ Hierarchy:
                         Model: b5cc08dd-e053-4dd7-b6c1-5d2d8fe53092:GeoSphere
                         Materials:
                             7bfbafbf6e19fa584fdeaa4fb2e6aecf~0: 644974ce-3550-48f1-ae0f-1f87c11085a8:mat/Moon
-                    a0e1c65e634111cfefa88249534b94e6: !TestMaterialAsyncCompiler.Renderers.TargetComponent,TestMaterialAsyncCompiler
-                        Id: 88854b59-e232-4577-a640-1d3864b6ca5a
         -   Folder: Ligths
             Entity:
                 Id: e5811921-6aec-46e6-8893-8d564c6873ef

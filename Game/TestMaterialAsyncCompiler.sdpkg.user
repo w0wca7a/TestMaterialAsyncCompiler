@@ -2,15 +2,15 @@
 Settings:
     Package/SceneSettings:
         e438d201-442b-4cee-8d0e-71f3a9cfb4aa:
-            CamPosition: {X: -0.5004269, Y: 2.4172118, Z: 16.579659}
-            CamPitchYaw: {X: -0.2660205, Y: 0.010709465}
+            CamPosition: {X: -0.017606642, Y: 0.5372595, Z: 2.3264115}
+            CamPitchYaw: {X: -0.22977151, Y: 5.9188786}
             CamProjection: Perspective
             CamVerticalFieldOfView: 45.0
             CamOrthographicSize: 10.0
             CamNearClipPlane: 0.1
             CamFarClipPlane: 1000.0
             CamAspectRatio: 1.7777778
-            CamMoveSpeed: 3.0
+            CamMoveSpeed: 0.1
             TranslationSnapActive: false
             TranslationSnapValue: 1.0
             RotationSnapActive: false
@@ -26,8 +26,8 @@ Settings:
             CameraPreviewVisible: true
             RenderMode: Lighting
             ActiveStream: 
-            TransformationGizmoSize: 1.0
-            ComponentGizmoSize: 1.0
+            TransformationGizmoSize: 0.083
+            ComponentGizmoSize: 0.08299999684095383
             FixedSizeGizmos: false
             HiddenGizmos:
                 - Model
@@ -39,8 +39,8 @@ Settings:
             LightProbeBounces: 1
             SceneLoaded: false
         8d4fbf24-aeb1-4312-9a27-5e1d07f7cb50:
-            CamPosition: {X: 4.0, Y: 2.0, Z: 4.0}
-            CamPitchYaw: {X: -0.2617994, Y: 0.7853982}
+            CamPosition: {X: -0.23699385, Y: 0.4127113, Z: 1.2468948}
+            CamPitchYaw: {X: -0.26985475, Y: 0.0050734356}
             CamProjection: Perspective
             CamVerticalFieldOfView: 45.0
             CamOrthographicSize: 10.0
